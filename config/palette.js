@@ -2,6 +2,7 @@ export default {
 	// color library
 	pink: '#ff679b',
 	red: '#e63757',
+	darkOrange: '#ed7700',
 	orange: '#fd7e14',
 	yellow: '#f6c343',
 	green: '#00d97e',
@@ -30,4 +31,8 @@ export default {
 	accent: '#945443',
 	accentDark: '#6a4234',
 	accentLight: '#c77155',
+	// 灰階底色
+	wordingGray: '#4A4A4A',
+	outlineGray: '#DBDBDB',
+	backgroundGray: '#DBDBDB',
 };

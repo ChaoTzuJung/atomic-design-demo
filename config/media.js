@@ -1,9 +1,11 @@
 export default {
-	'--phone': '(width < 600px)',
+	'--smal-phone': '(width <= 375px)',
 
-	'--small-tablet': '(900px > width >= 600px)',
+	'--phone': '(width < 768px)',
 
-	'--tablet': '(1200px > width >= 900px)',
+	// '--small-tablet': '(900px > width >= 600px)',
+
+	'--tablet': '(width < 1200px)',
 
 	'--desktop': '(width >= 1200px)',
 };
