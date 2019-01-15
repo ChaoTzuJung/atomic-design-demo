@@ -7,7 +7,10 @@
 				"useBuiltIns": "entry"
 			}
 		],
-		"@babel/preset-react"
+		"@babel/preset-react",
+		//[ "es2015", { "loose": true, } ],
+		//"react",
+		//"stage-3"
 	],
 	"plugins": [
 		[
