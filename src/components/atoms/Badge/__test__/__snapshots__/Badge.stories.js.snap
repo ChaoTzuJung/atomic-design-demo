@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`__interactive 1`] = `
+<Badge
+  colorType="secondary-normal"
+  text="label"
+>
+  <span
+    className="badge secondary-normal"
+  >
+    <div
+      className="text"
+    >
+      label
+    </div>
+  </span>
+</Badge>
+`;

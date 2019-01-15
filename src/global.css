@@ -1,0 +1,165 @@
+/*
+* This is for global css usage.
+*/
+
+@import url('https://fonts.googleapis.com/earlyaccess/notosanstc.css');
+
+* {
+	box-sizing: border-box;
+}
+
+body,
+input,
+select,
+textarea,
+button {
+	font-family: 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+
+body {
+	margin: 0;
+	overflow-x: hidden;
+	width: 100%;
+
+	&:global(.no-scroll) {
+		position: fixed;
+		overflow-y: scroll;
+	}
+}
+
+ul {
+	list-style: none;
+	padding: 0;
+}
+
+h1 {
+	padding: 0;
+	margin: 0;
+	font-size: 40px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.4;
+	letter-spacing: 5px;
+	color: var(--black);
+}
+
+h2 {
+	padding: 0;
+	margin: 0;
+	font-size: 34px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.35;
+	letter-spacing: 5px;
+	color: var(--black);
+}
+
+h2:global(.vertical) {
+	font-family: 'source-han-serif-japanese', serif;
+	font-weight: bold;
+	letter-spacing: 7.7px;
+	line-height: 1.29;
+	writing-mode: vertical-rl;
+}
+
+h3 {
+	padding: 0;
+	margin: 0;
+	font-size: 20px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.35;
+	letter-spacing: 5px;
+	color: var(--black);
+}
+
+h4 {
+	padding: 0;
+	margin: 0;
+	font-size: 18px;
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.35;
+	letter-spacing: 3px;
+	color: var(--black);
+}
+
+h5 {
+	padding: 0;
+	margin: 0;
+	font-size: 15px;
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 1.35;
+	letter-spacing: 2.5px;
+	color: var(--black);
+}
+
+p {
+	padding: 0;
+	margin: 0;
+	font-size: 13px;
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+	line-height: 2;
+	letter-spacing: 1px;
+	color: var(--black);
+}
+
+p:global(.small) {
+	font-size: 12px;
+	letter-spacing: 0.5px;
+}
+
+p:global(.vertical) {
+	font-family: 'source-han-serif-japanese', serif;
+	font-weight: bold;
+	letter-spacing: 7.7px;
+	line-height: 1.29;
+	writing-mode: vertical-rl;
+}
+
+a {
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+}
+
+a:global(.underline) {
+	color: #c77155;
+	text-decoration: underline;
+
+	&:hover {
+		color: #945443;
+	}
+
+	&:focus {
+		color: #945443;
+	}
+
+	&:active {
+		color: #945443;
+	}
+}
+
+button {
+	margin: 0;
+	padding: 0;
+	background-color: transparent;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+
+textarea,
+input {
+	appearance: none;
+	border-radius: 0;
+}
