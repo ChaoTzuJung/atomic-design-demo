@@ -5,7 +5,7 @@ import RoundButton from 'components/atoms/RoundButton';
 
 import { storiesOf, action } from '../../../../util/facade';
 
-const stories = storiesOf('atoms/[ buttons ]/RoundButton', module);
+const stories = storiesOf('Commons|atoms/[ Buttons ]/RoundButton', module);
 
 stories.addDecorator(withKnobs);
 
