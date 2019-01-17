@@ -27,7 +27,7 @@
     "build": "cross-env NODE_ENV=production webpack --config webpack.config.prod.babel.js",
     "build:demo": "cross-env NODE_ENV=development webpack --config webpack.config.prod.babel.js",
     "lint": "eslint . && stylelint .",
-    "storybook": "start-storybook -p 8000 -c storybook",
+    "storybook": "start-storybook -p 8001 -c storybook",
     "prebuild:storybook": "npm run test:generate-output || true",
     "build:storybook": "build-storybook -c storybook -o _public/storybook",
     "test:generate-output": "jest --json --outputFile=.jest-test-results.json",
