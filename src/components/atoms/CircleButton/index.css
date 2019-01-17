@@ -1,0 +1,244 @@
+.circle-button {
+	display: inline-block;
+	position: relative;
+	font-size: 14px;
+	cursor: pointer;
+
+	& > .button {
+		display: flex;
+	    position: relative;
+		justify-content: center;
+		align-items: center;
+		cursor: pointer;
+		z-index: 2;
+
+		&.shadow {
+			box-shadow: 0 2px 4px 0 rgba(104, 104, 104, 0.3);
+		}
+	}
+
+	& > .tooltip {
+		display: flex;
+		justify-content: center;
+		font-family: 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', 'sans-serif';
+		position: absolute;
+		background: #F7BB29;
+		color: white;
+		font-size: 13px;
+		letter-spacing: 2px;
+		padding: 10px;
+		border-radius: 8px;
+
+		&.with-triangle {
+			& > .triangle {
+				position: absolute;
+				border-style: solid;
+				border-width: 5px;
+
+				&.top {
+					border-color: #F7BB29 transparent transparent transparent;
+					top: 100%;
+					bottom: auto;
+					right: auto;
+					left: 50%;
+					margin-left: -5px;
+				}
+
+				&.left {
+					border-color: transparent transparent transparent #F7BB29;
+					top: 50%;
+					bottom: auto;
+					right: auto;
+					left: 100%;
+					margin-top: -5px;
+				}
+
+				&.right {
+					border-color: transparent #F7BB29 transparent transparent;
+					top: 50%;
+					bottom: auto;
+					right: 100%;
+					left: auto;
+					margin-top: -5px;
+				}
+
+				&.bottom {
+					border-color: transparent transparent #F7BB29 transparent;
+					top: auto;
+					bottom: 100%;
+					right: auto;
+					left: 50%;
+					margin-left: -5px;
+				}
+			}
+		}
+
+		&.top {
+			top: auto;
+			bottom: 100%;
+			right: auto;
+			left: 50%;
+		}
+
+		&.left {
+			top: 0;
+			bottom: auto;
+			right: 100%;
+			left: auto;
+		}
+
+		&.right {
+			top: 0;
+			bottom: auto;
+			right: auto;
+			left: 100%;
+		}
+
+		&.bottom {
+			top: 100%;
+			bottom: auto;
+			right: auto;
+			left: 50%;
+		}
+	}
+
+	& > .tooltipActiveComponent {
+		position: absolute;
+
+		&.top {
+			top: auto;
+			bottom: calc(100% + 10px);
+			right: auto;
+			left: 50%;
+		}
+
+		&.left {
+			top: auto;
+			bottom: 0;
+			right: calc(100% + 10px);
+			left: auto;
+		}
+
+		&.right {
+			top: auto;
+			bottom: 0;
+			right: auto;
+			left: calc(100% + 10px);
+		}
+
+		&.bottom {
+			top: calc(100% + 10px);
+			bottom: auto;
+			right: auto;
+			left: 50%;
+		}
+	}
+
+	& > .extension {
+		display: flex;
+		position: absolute;
+		overflow: hidden;
+
+		&.shadow {
+			box-shadow: 0 2px 4px 0 rgba(104, 104, 104, 0.3);
+		}
+
+		& > .item-container {
+			display: flex;
+			position: relative;
+			justify-content: space-between;
+			align-items: center;
+
+			& > .items {
+				display: flex;
+				position: relative;
+				justify-content: space-around;
+				align-items: center;
+			}
+
+			& > .separator {
+				position: relative;
+			}
+		}
+
+		&.top {
+			top: auto;
+			bottom: 0;
+			right: 0;
+			left: auto;
+
+			& > .item-container {
+				flex-direction: column;
+
+				& > .items {
+					flex-direction: column;
+					height: 100%;
+				}
+
+				& > .separator {
+					width: 30%;
+					height: 1px;
+				}
+			}
+		}
+
+		&.left {
+			top: 0;
+			bottom: auto;
+			right: 0;
+			left: auto;
+
+			& > .item-container {
+				& > .items {
+					width: 100%;
+				}
+
+				& > .separator {
+					width: 1px;
+					height: 30%;
+				}
+			}
+		}
+
+		&.right {
+			top: 0;
+			bottom: auto;
+			right: auto;
+			left: 0;
+
+			& > .item-container {
+				flex-direction: row-reverse;
+
+				& > .items {
+					width: 100%;
+				}
+
+				& > .separator {
+					width: 1px;
+					height: 30%;
+				}
+			}
+		}
+
+		&.bottom {
+			top: 0;
+			bottom: auto;
+			right: 0;
+			left: auto;
+
+			& > .item-container {
+				flex-direction: column-reverse;
+
+				& > .items {
+					flex-direction: column;
+					height: 100%;
+				}
+
+				& > .separator {
+					width: 30%;
+					height: 1px;
+				}
+			}
+		}
+	}
+}

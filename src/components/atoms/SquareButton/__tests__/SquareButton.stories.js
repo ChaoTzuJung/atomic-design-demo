@@ -9,7 +9,7 @@ const stories = storiesOf('Commons|atoms/[ Buttons ]/SquareButton', module);
 
 stories.addDecorator(withKnobs);
 
-stories.add('default', () => {
+stories.add('with default', () => {
 	const squareButton = (
 		<div>
 			<SquareButton onClick={action('click')}>button</SquareButton>
