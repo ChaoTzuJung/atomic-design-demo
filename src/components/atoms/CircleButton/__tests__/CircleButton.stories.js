@@ -1,5 +1,5 @@
 import React from 'react';
-import { withKnobs, color, number, select, boolean } from '@storybook/addon-knobs';
+import { withKnobs, color, number, select, boolean, text } from '@storybook/addon-knobs';
 
 import { storiesOf, action } from 'util/facade';
 
@@ -21,7 +21,7 @@ stories.add('__interactive', () => {
 				activeColor={color('activeColor', '#ECECEC')}
 				onClick={action('click')}
 			>
-				?
+				<ShareIcon />
 			</CircleButton>
 		</div>
 	);
@@ -46,8 +46,8 @@ stories.add('with tooltip', () => {
 		<div style={{ marginLeft: '100px', marginTop: '100px' }}>
 			<CircleButton
 				tooltipConfig={{
-					enable: true,
-					text: 'tips',
+					enable: boolean('enable', true),
+					text: text('text', 'tips'),
 					direction: select(
 						'tooltip direction',
 						['top', 'left', 'right', 'bottom'],
