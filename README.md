@@ -106,6 +106,17 @@ export default {
 };
 ```
 
+#### CSS 規範
+```
+位置
+大小
+外型
+背景顏色
+文字顏色
+文字大小
+效果
+```
+
 ## Contribution
 
 此專案 commit message 使用 angular format ，並使用 [commitizen](http://commitizen.github.io/cz-cli/) 輔助產生 commit message
