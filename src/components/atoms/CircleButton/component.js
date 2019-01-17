@@ -91,9 +91,9 @@ const CircleButton = ({
 
 	// props
 	children,
-	size = 40,
-	shadow,
 	buttonStyle,
+	size = 40,
+	shadow = false,
 	color = '#C0C0C0',
 	hoverColor = '#ECECEC',
 	activeColor = '#ECECEC',

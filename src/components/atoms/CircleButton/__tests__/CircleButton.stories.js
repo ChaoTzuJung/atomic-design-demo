@@ -4,6 +4,7 @@ import { withKnobs, color, number, select, boolean } from '@storybook/addon-knob
 import { storiesOf, action } from 'util/facade';
 
 import CircleButton from 'components/atoms/CircleButton';
+import ShareIcon from 'images/icon/share.inline.svg';
 
 const stories = storiesOf('Commons|atoms/[ Buttons ]/CircleButton', module);
 
@@ -20,7 +21,7 @@ stories.add('__interactive', () => {
 				activeColor={color('activeColor', '#ECECEC')}
 				onClick={action('click')}
 			>
-				i
+				?
 			</CircleButton>
 		</div>
 	);
@@ -31,7 +32,9 @@ stories.add('__interactive', () => {
 stories.add('with default', () => {
 	const circleButton = (
 		<div>
-			<CircleButton>i</CircleButton>
+			<CircleButton>
+				<ShareIcon />
+			</CircleButton>
 		</div>
 	);
 
@@ -58,7 +61,7 @@ stories.add('with tooltip', () => {
 				hoverColor={color('hoverColor', '#ECECEC')}
 				activeColor={color('activeColor', '#ECECEC')}
 			>
-				i
+				<ShareIcon />
 			</CircleButton>
 		</div>
 	);
@@ -92,7 +95,7 @@ stories.add('with extendItems', () => {
 				hoverColor={color('hoverColor', '#ECECEC')}
 				activeColor={color('activeColor', '#ECECEC')}
 			>
-				i
+				<ShareIcon />
 			</CircleButton>
 		</div>
 	);

@@ -23,10 +23,10 @@ const mapSetStateToProps = (
 	// 外部進來的props
 	{
 		children,
+		buttonStyle,
 		onClick,
 		size,
 		shadow,
-		buttonStyle,
 		color,
 		hoverColor,
 		activeColor,
@@ -36,18 +36,18 @@ const mapSetStateToProps = (
 	// 必須設定的參數
 	setState,
 ) => ({
-	// states
+	// 外部進來的states轉state
 	hover,
 	active,
 	extendItemsActiveKey,
 	extendContentInfo,
 	disableHover,
 
-	// props
+	// 外部進來的props轉state
 	children,
+	buttonStyle,
 	size,
 	shadow,
-	buttonStyle,
 	color,
 	hoverColor,
 	activeColor,
@@ -89,7 +89,7 @@ const mapSetStateToProps = (
 		...extendItemsConfig,
 	},
 
-	// actions
+	// 這邊自訂 actions
 	onHover() {
 		if (isBrowser && !disableHover) {
 			setState({ hover: true });
