@@ -1,0 +1,13 @@
+.round-button {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	width: 135px;
+	height: 37px;
+	background-color: white;
+	border: solid 1px #9b9b9b;
+	border-radius: 18.5px;
+	color: var(--black);
+	font-size: 14px;
+	cursor: pointer;
+}

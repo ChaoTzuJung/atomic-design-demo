@@ -1,0 +1,10 @@
+.square-button {
+	display: inline-block;
+	padding: 15px 38px;
+	border: solid 1px var(--black);
+	border-radius: 5px;
+	font-size: 14px;
+	color: var(--black);
+	letter-spacing: 2.2px;
+	cursor: pointer;
+}
