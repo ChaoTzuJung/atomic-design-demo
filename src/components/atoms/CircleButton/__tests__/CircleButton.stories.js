@@ -74,7 +74,7 @@ stories.add('with extendItems', () => {
 		<div style={{ marginLeft: '200px', marginTop: '200px' }}>
 			<CircleButton
 				extendItemsConfig={{
-					enable: true,
+					enable: boolean('enable', true),
 					direction: select(
 						'extension direction',
 						['top', 'left', 'right', 'bottom'],
