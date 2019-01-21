@@ -1,0 +1,19 @@
+.social-link {
+	position: relative;
+	transition: all 0.15s ease-in-out;
+	width: 16px;
+
+	&:hover {
+		opacity: 0.5;
+	}
+
+	& > svg {
+		position: relative;
+		width: 16px;
+		width: 16px;
+
+		& > path {
+			fill: var(--black);
+		}
+	}
+}
