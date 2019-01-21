@@ -1,0 +1,21 @@
+.solid-triangle {
+	width: 0;
+	height: 0;
+	border-style: solid;
+
+	&.up {
+		transform: rotate(0deg);
+	}
+
+	&.right {
+		transform: rotate(90deg);
+	}
+
+	&.down {
+		transform: rotate(180deg);
+	}
+
+	&.left {
+		transform: rotate(270deg);
+	}
+}
