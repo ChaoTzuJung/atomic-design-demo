@@ -1,0 +1,22 @@
+.triangle {
+	display: inline-block;
+	border-style: solid;
+	transform: rotate(45deg);
+	transition: transform 0.3s ease-in-out;
+
+	&.up {
+		transform: rotate(315deg);
+	}
+
+	&.right {
+		transform: rotate(45deg);
+	}
+
+	&.down {
+		transform: rotate(135deg);
+	}
+
+	&.left {
+		transform: rotate(225deg);
+	}
+}
