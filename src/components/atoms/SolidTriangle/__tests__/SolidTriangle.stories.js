@@ -5,7 +5,7 @@ import SolidTriangle from 'components/atoms/SolidTriangle';
 
 import { storiesOf } from 'util/facade';
 
-const stories = storiesOf('Commons|atoms/[ graphics ]/SolidTriangle', module);
+const stories = storiesOf('Commons|atoms/[ Graphics ]/SolidTriangle', module);
 
 stories.addDecorator(withKnobs);
 
@@ -21,6 +21,12 @@ stories.add('__interactive', () => {
 				'up',
 			)}
 		/>);
+
+	return solidTriangle;
+});
+
+stories.add('with defalut', () => {
+	const solidTriangle = <SolidTriangle />;
 
 	return solidTriangle;
 });
