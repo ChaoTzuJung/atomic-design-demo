@@ -1,0 +1,52 @@
+.hamburger {
+	display: flex;
+	flex-direction: column;
+	cursor: pointer;
+
+	&.background {
+		width: 42px;
+		height: 42px;
+		justify-content: center;
+		align-items: center;
+		background-color: rgba(8, 8, 8, 0.3);
+		border-radius: 6px;
+	}
+
+	& > .row {
+		display: flex;
+
+		&:nth-child(2) {
+			margin: 5px 0;
+		}
+
+		& > .line {
+			width: 10px;
+			height: 2px;
+			transition: all 0.15s ease-in-out;
+		}
+	}
+
+	&.open {
+		& > .row {
+			&:nth-child(2) {
+				opacity: 0;
+			}
+			&:nth-child(1) {
+				& > .line:first-child {
+					transform: translateX(1.5px) translateY(3.5px) rotate(45deg);
+				}
+				& > .line:last-child {
+					transform: translateX(-1.5px) translateY(3.5px) rotate(-45deg);
+				}
+			}
+			&:nth-child(3) {
+				& > .line:first-child {
+					transform: translateX(1.5px) translateY(-3.5px) rotate(-45deg);
+				}
+				& > .line:last-child {
+					transform: translateX(-1.5px) translateY(-3.5px) rotate(45deg);
+				}
+			}
+		}
+	}
+}
