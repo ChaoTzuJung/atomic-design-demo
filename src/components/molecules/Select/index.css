@@ -1,0 +1,75 @@
+.select {
+	position: relative;
+	cursor: pointer;
+	z-index: 100;
+
+	&.disabled {
+		cursor: no-drop;
+
+		& > .select-box {
+			& > .mask {
+				opacity: 1;
+				width: 100%;
+			}
+		}
+	}
+
+	& > .select-box {
+		& > .mask {
+			position: absolute;
+			width: 0;
+			height: 100%;
+			opacity: 0;
+			background: #F5F5F5;
+			z-index: -1;
+			transition: width 0.3s ease-in-out;
+		}
+
+		&.animation {
+			&:hover, &.active {
+				& > .mask {
+					opacity: 1;
+					width: 100%;
+				}
+			}
+		}
+	}
+
+	& > .options-wrap {
+		position: absolute;
+		width: 100%;
+		overflow: hidden;
+		transition: height 0.3s ease-in-out;
+	}
+}
+
+.default-select-box {
+	border: solid 0.5px #B4B4B4;
+	border-radius: 5px;
+	background: white;
+
+	& > .container {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 15px 20px;
+		font-size: 14px;
+		letter-spacing: 2.2px;
+		text-align: center;
+		color: var(--orange);
+
+		& > .placeholder {
+			display: flex;
+			align-items: center;
+
+			& > .icon {
+				margin-right: 10px;
+			}
+		}
+
+		& > .triangle {
+			margin-left: 10px;
+			margin-top: 5px;
+		}
+	}
+}
