@@ -36,7 +36,6 @@ const mapSetStateToProps = (
 		searchRecords,
 		relatedKeywords,
 		small,
-		...others,
 
 		// dispatch
 		search,
@@ -60,7 +59,6 @@ const mapSetStateToProps = (
 	searchRecords,
 	relatedKeywords,
 	small,
-	...others,
 
 	// actions
 	showExtension() {
