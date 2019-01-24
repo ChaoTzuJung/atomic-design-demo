@@ -10,7 +10,6 @@
 	& > svg {
 		position: relative;
 		width: 16px;
-		width: 16px;
 
 		& > path {
 			fill: var(--black);

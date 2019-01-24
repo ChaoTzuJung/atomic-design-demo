@@ -1,6 +1,7 @@
 .article-list {
 	width: 100%;
-	/*border: solid 0.5px var(--outline-gray);*/
+
+	/* border: solid 0.5px var(--outline-gray); */
 	box-shadow: 0 1px 4px 0 rgba(104, 104, 104, 0.3);
 	border-radius: 5px;
 	background: white;
@@ -14,6 +15,7 @@
 				@media screen and (--phone) {
 					padding: 20px;
 				}
+
 				@media screen and (--small-phone) {
 					padding: 15px;
 				}
@@ -28,6 +30,7 @@
 
 				& > .content {
 					display: block;
+
 					/* for setting text with ellipsis */
 					display: -webkit-box;
 					width: 100%;
@@ -67,7 +70,7 @@
 		text-align: center;
 		font-size: 14px;
 		letter-spacing: 1.8px;
-		color: #ED7700;
+		color: #ed7700;
 		cursor: pointer;
 	}
 

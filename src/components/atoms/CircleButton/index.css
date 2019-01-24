@@ -6,7 +6,7 @@
 
 	& > .button {
 		display: flex;
-	    position: relative;
+		position: relative;
 		justify-content: center;
 		align-items: center;
 		cursor: pointer;
@@ -20,9 +20,9 @@
 	& > .tooltip {
 		display: flex;
 		justify-content: center;
-		font-family: 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', 'sans-serif';
+		font-family: 'Noto Sans TC', 'PingFang TC', 'Microsoft JhengHei', sans-serif;
 		position: absolute;
-		background: #F7BB29;
+		background: #f7bb29;
 		color: white;
 		font-size: 13px;
 		letter-spacing: 2px;
@@ -36,7 +36,7 @@
 				border-width: 5px;
 
 				&.top {
-					border-color: #F7BB29 transparent transparent transparent;
+					border-color: #f7bb29 transparent transparent transparent;
 					top: 100%;
 					bottom: auto;
 					right: auto;
@@ -45,7 +45,7 @@
 				}
 
 				&.left {
-					border-color: transparent transparent transparent #F7BB29;
+					border-color: transparent transparent transparent #f7bb29;
 					top: 50%;
 					bottom: auto;
 					right: auto;
@@ -54,7 +54,7 @@
 				}
 
 				&.right {
-					border-color: transparent #F7BB29 transparent transparent;
+					border-color: transparent #f7bb29 transparent transparent;
 					top: 50%;
 					bottom: auto;
 					right: 100%;
@@ -63,7 +63,7 @@
 				}
 
 				&.bottom {
-					border-color: transparent transparent #F7BB29 transparent;
+					border-color: transparent transparent #f7bb29 transparent;
 					top: auto;
 					bottom: 100%;
 					right: auto;

@@ -31,18 +31,22 @@
 			&:nth-child(2) {
 				opacity: 0;
 			}
+
 			&:nth-child(1) {
 				& > .line:first-child {
 					transform: translateX(1.5px) translateY(3.5px) rotate(45deg);
 				}
+
 				& > .line:last-child {
 					transform: translateX(-1.5px) translateY(3.5px) rotate(-45deg);
 				}
 			}
+
 			&:nth-child(3) {
 				& > .line:first-child {
 					transform: translateX(1.5px) translateY(-3.5px) rotate(-45deg);
 				}
+
 				& > .line:last-child {
 					transform: translateX(-1.5px) translateY(-3.5px) rotate(45deg);
 				}

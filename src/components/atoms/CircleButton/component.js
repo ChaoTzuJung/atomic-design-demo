@@ -140,39 +140,39 @@ const CircleButton = ({
 		</div>
 		{tooltipConfig.enable &&
 			(hover && !active) && (
-				<div
-					className={classnames(
-						styles.tooltip,
-						tooltipConfig.className,
-						styles[tooltipConfig.direction],
-						{
-							[styles.withTriangle]: tooltipConfig.withTriangle,
-						},
-					)}
-					style={{
-						width: `${tooltipConfig.width}px`,
-						margin: setTooltipPosition(tooltipConfig, size),
-					}}
-				>
-					{tooltipConfig.text}
-					{tooltipConfig.withTriangle && (
-						<div className={classnames(styles.triangle, styles[tooltipConfig.direction])} />
-					)}
-				</div>
-			)}
+			<div
+				className={classnames(
+					styles.tooltip,
+					tooltipConfig.className,
+					styles[tooltipConfig.direction],
+					{
+						[styles.withTriangle]: tooltipConfig.withTriangle,
+					},
+				)}
+				style={{
+					width: `${tooltipConfig.width}px`,
+					margin: setTooltipPosition(tooltipConfig, size),
+				}}
+			>
+				{tooltipConfig.text}
+				{tooltipConfig.withTriangle && (
+					<div className={classnames(styles.triangle, styles[tooltipConfig.direction])} />
+				)}
+			</div>
+		)}
 		{tooltipConfig.enable &&
 			tooltipConfig.activeComponent &&
 			active && (
-				<div
-					className={classnames(
-						styles.tooltipActiveComponent,
-						styles[tooltipConfig.direction],
-						tooltipConfig.activeComponentStyle,
-					)}
-				>
-					<tooltipConfig.activeComponent />
-				</div>
-			)}
+			<div
+				className={classnames(
+					styles.tooltipActiveComponent,
+					styles[tooltipConfig.direction],
+					tooltipConfig.activeComponentStyle,
+				)}
+			>
+				<tooltipConfig.activeComponent />
+			</div>
+		)}
 		{extendItemsConfig.enable && (
 			<div
 				className={classnames(styles.extension, styles[extendItemsConfig.direction], {

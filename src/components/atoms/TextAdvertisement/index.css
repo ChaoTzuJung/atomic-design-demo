@@ -2,10 +2,10 @@
 	& > ul {
 		-webkit-margin-before: 0;
 		-webkit-margin-after: 0;
-		color: #FF6F00;
+		color: #ff6f00;
 
 		& > li {
-			&:not(:last-child){
+			&:not(:last-child) {
 				/* margin-bottom: 8px; */
 			}
 
@@ -13,7 +13,7 @@
 				font-size: 13px;
 				line-height: 2;
 				letter-spacing: 2px;
-				color: #FF6F00;
+				color: #ff6f00;
 			}
 		}
 	}
@@ -23,6 +23,7 @@
 	.text-advertisement {
 		& > ul {
 			-webkit-padding-start: 20px;
+
 			& > li {
 				margin-bottom: 10px;
 
