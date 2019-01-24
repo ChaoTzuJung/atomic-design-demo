@@ -1,0 +1,44 @@
+.slider {
+	position: relative;
+	width: 100%;
+
+	& .pagination {
+		text-align: right;
+		padding: 0 60px 20px 0;
+		z-index: 20;
+
+		@media screen and (--tablet), screen and (--phone) {
+			text-align: center;
+			padding: 0;
+		}
+
+		& :global(.swiper-pagination-bullet) {
+			margin: 0 5px;
+			opacity: 1;
+			background: white;
+		}
+
+		& :global(.swiper-pagination-bullet-active) {
+			background: var(--justsleepBlue);
+		}
+	}
+}
+
+.slide {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+
+	& > img {
+		width: 100%;
+	}
+}
+
+.watermark {
+	position: absolute;
+	z-index: 10;
+	width: 35%;
+	top: 40%;
+	left: 32.5%;
+}
