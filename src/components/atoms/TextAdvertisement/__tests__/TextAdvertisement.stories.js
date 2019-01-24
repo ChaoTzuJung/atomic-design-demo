@@ -5,7 +5,7 @@ import TextAdvertisement from 'components/atoms/TextAdvertisement';
 
 import { storiesOf } from 'util/facade';
 
-const stories = storiesOf('Commons|atoms/[ advertisement ]/TextAdvertisement', module);
+const stories = storiesOf('Commons|atoms/[ Advertisement ]/TextAdvertisement', module);
 
 stories.addDecorator(withKnobs);
 
