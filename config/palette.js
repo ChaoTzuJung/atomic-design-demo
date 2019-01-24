@@ -3,8 +3,8 @@ export default {
 	pink: '#ff679b',
 	red: '#e63757',
 	darkOrange: '#ed7700',
-	orange: '#fd7e14',
-	yellow: '#f6c343',
+	// orange: '#fd7e14',
+	// yellow: '#f6c343',
 	green: '#00d97e',
 	teal: '#02a8b5',
 	cyan: '#39afd1',
@@ -32,7 +32,11 @@ export default {
 	accentDark: '#6a4234',
 	accentLight: '#c77155',
 	// 灰階底色
-	wordingGray: '#4A4A4A',
-	outlineGray: '#DBDBDB',
-	backgroundGray: '#DBDBDB',
+	'wording-gray': '#4A4A4A',
+	'outline-gray': '#DBDBDB',
+	'background-gray': '#FAFAFA',
+	// 104
+	'dark-orange': '#ED7700',
+	orange: '#FF7800',
+	yellow: '#F7BB2C',
 };
