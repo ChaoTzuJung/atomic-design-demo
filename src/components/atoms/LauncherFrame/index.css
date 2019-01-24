@@ -1,0 +1,50 @@
+.launcher-frame {
+	width: 300px;
+	height: 360px;
+	border-radius: 10px;
+	overflow: hidden;
+	box-shadow: 0 2px 4px 0 rgba(104, 104, 104, 0.3);
+
+	& > .top {
+		display: flex;
+		position: relative;
+		justify-content: center;
+		align-items: center;
+		width: 100%;
+		height: 35px;
+		background-color: #686868;
+		font-size: 13px;
+		letter-spacing: 2.2px;
+		color: white;
+	}
+
+	& > .questionare {
+		width: 100%;
+		height: 325px;
+		overflow: auto;
+	    background: white;
+
+		&::-webkit-scrollbar {
+			-webkit-appearance: none;
+		}
+
+		&::-webkit-scrollbar:vertical {
+			width: 10px;
+		}
+
+		&::-webkit-scrollbar-thumb {
+			background-color: var(--outline-gray);
+			border-radius: 10px;
+			border: 2px solid white;
+		}
+
+		&::-webkit-scrollbar-track {
+			border-radius: 10px;
+			background-color: var(--background-gray);
+		}
+
+		& > iframe {
+			width: 100%;
+		}
+	}
+}
