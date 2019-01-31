@@ -28,7 +28,7 @@
 			-webkit-appearance: none;
 		}
 
-		&::-webkit-scrollbar:vertical {
+		&::-webkit-scrollbar-vertical {
 			width: 10px;
 		}
 

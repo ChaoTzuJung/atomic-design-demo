@@ -14,28 +14,6 @@
 		}
 	}
 
-	& > .select-box {
-		& > .mask {
-			position: absolute;
-			width: 0;
-			height: 100%;
-			opacity: 0;
-			background: ##f5f5f5;
-			z-index: -1;
-			transition: width 0.3s ease-in-out;
-		}
-
-		&.animation {
-			&:hover,
-			&.active {
-				& > .mask {
-					opacity: 1;
-					width: 100%;
-				}
-			}
-		}
-	}
-
 	& > .options-wrap {
 		position: absolute;
 		width: 100%;
